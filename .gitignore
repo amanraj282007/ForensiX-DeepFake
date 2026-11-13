@@ -1,0 +1,20 @@
+﻿# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*.class
+
+# PyTorch checkpoints exceeding 100 MB (host on GitHub Releases / Drive)
+*.pt
+*.pth
+*.bin
+
+# Environment & IDE
+.venv/
+env/
+venv/
+.idea/
+.vscode/
+
+# OS artifacts
+Thumbs.db
+.DS_Store

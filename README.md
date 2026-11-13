@@ -41,7 +41,6 @@ This repository contains all required code, deployment graphs, and verification 
 | :--- | :---: | :--- |
 | `predictions.csv` | ~146 KB | Test predictions for all 3,000 images (`image_id`, `label`, `confidence`), calibrated to standard threshold 0.50. |
 | `inferencescript.py` | ~12 KB | Standalone, self-contained inference script (dynamic model builder, TTA flip averaging, standard 0.50 cutoff, optional `--prune_vit`). |
-| `inference_script.py` | ~200 B | Entrypoint alias forwarding directly to `inferencescript.py`. |
 | `prune_or_replace_vit.py` | ~4 KB | Utility to prune ViT-B/16 (-58M params, VRAM < 1.5 GB), replace with B3, or save checkpoint in FP16 (-50% disk size). |
 | `export_onnx.py` | ~8 KB | Multi-target ONNX export script supporting Dual-Combo (B0+ConvNeXt), Pruned Ensemble, and Full Ensemble graphs. |
 | `export_tflite.py` | ~6 KB | Standalone compilation script for Dual-Architecture (B0 + ConvNeXt) TensorFlow Lite FlatBuffers. |
